@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JSONP</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <script>
+            function showPersion(data){
+                console.log("name: "+data.name+","+"age: "+data.age)
+            }
+        </script>
+        <script src="http://127.0.0.1:3000?func=showPersion"></script>
+    </body>
+</html>

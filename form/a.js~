@@ -1,0 +1,8 @@
+/*
+  todo 
+  jquery submit  
+  jquery validate onclick  
+  onsubmit
+  onclick
+  
+*/
