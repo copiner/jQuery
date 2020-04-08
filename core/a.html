@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="author" content="form" />
+    <script src="./a.js"></script>
+  </head>
+  <body>
+    <div id="core" class="core">DOM</div>
+    <input id="cfn" type="text" value="" />
+    <script>
+      //$("#core");
+
+      $.extend({//jquery对象上添加方法
+        min: function(a, b) { return a < b ? a : b; },
+        max: function(a, b) { return a > b ? a : b; }
+      });
+      //
+      // jQuery.min(2,3); //  2
+      // jQuery.max(4,5); //  5
+
+      var settings = { validate: false, limit: 5, name: "foo" };
+      var options = { validate: true, name: "bar" };
+      $.extend(settings, options);
+
+      $.fn.extend({//jquery对象原型添加方法
+          alertWhileClick:function() {
+
+                       alert("al");
+
+           }
+      });
+      //$("#cfn").alertWhileClick();
+    </script>
+  </body>
+</html>
